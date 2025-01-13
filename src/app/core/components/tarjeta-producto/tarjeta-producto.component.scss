@@ -1,0 +1,127 @@
+@use "./../../../../assets/styles/variables.scss";
+
+#container {
+    height: 100px;
+    display: flex;
+    background-color: variables.$color-principal-claro;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#foto {
+    height: 100%;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+        height: 30px;
+
+        &:first-child {
+            margin-left: 10px;
+            background-color: variables.$color-sello-comida;
+            border-radius: 50%;
+        }
+    }
+}
+
+#detalles {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 50px;
+    font-size: 110%;
+
+    .dark-theme & {
+        color: #cccccc; // Cambiar color del texto en modo oscuro si es necesario
+    }
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    .dark-theme & {
+        color: #e0e0e0; // Color de título en modo oscuro
+    }
+}
+
+ul li {
+    display: flex;
+    
+    &:not(:last-of-type)::after {
+        content: ", ";
+    }
+}
+
+
+
+#precio {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: auto;
+    margin-right: 25px;
+    font-size: 130%;
+
+    .dark-theme & {
+        color: #000000; // Color especial para el precio en modo oscuro
+    }
+}
+
+@media (max-width: 600px) {
+    #precio {
+        font-size: 0%;
+    }
+
+    #foto {
+        height: 150%;
+        width: 150%;
+    }
+
+    #container {
+        background-color: rgb(206, 234, 236);
+    }
+
+    img {
+        height: 10px;
+    }
+
+    #detalles {
+        flex: 2;
+        padding-left: 40px;
+        font-size: 100%;
+    }
+
+    h4 ul li {
+        color: black;
+    }
+}
+@media (min-width: 800px) and (max-width: 1200px){
+    #foto {
+        height: 100%;
+        img{
+            height: 30px;
+        }
+    }
+
+    #container {
+        height: 120px;
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    #detalles {
+        flex: 3;
+        padding-left: 40px;
+        font-size: 110%;
+    }
+
+    h4 ul li {
+        color: black;
+    }
+}

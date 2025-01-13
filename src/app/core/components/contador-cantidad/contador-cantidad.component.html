@@ -1,0 +1,5 @@
+<div id="container">
+    <button class="act" [disabled]="getNumero()<=1" (click)="actualizarNumero(-1)">-</button>
+    <span>{{numero$ | async}}</span>
+    <button class="act" (click)="actualizarNumero(1)">+</button>
+</div>

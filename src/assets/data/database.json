@@ -1,0 +1,319 @@
+[
+    {
+        "id": 1,
+        "nombre":"Pizzas",
+        "fotoUrl": "https://www.pizzaiolo.mx/img/blog/una-pizza-con-queso-derretido--Pizza-blog.jpg",
+        "productos":[
+            {
+                "id": "6",
+                "nombre":"Pizza Hawaiana",
+                "precio": 20000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Salsa de tomate, Queso mozzarella, Jamón en lonchas y Piña"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/deliciosa-pizza-interior-encima-vista_23-2150873882.jpg?t=st=1730813749~exp=1730817349~hmac=4717e10c0e8e9b0e0b9d709fa0afde8e3e98eba37b048cca4bf1a161134b8d18&w=826",
+                "calificaciones":[
+                    {
+                        "id":"11",
+                        "valor": "4,5",
+                        "comentario": "Estaba muy rica"
+                    },
+                    {
+                        "id":"12",
+                        "valor": "3",
+                        "comentario": "No estaba tan buena"
+                    },
+                    {
+                        "id":"13",
+                        "valor": "5",
+                        "comentario": "Deliciosa"
+                    }
+                ]
+            },
+            {
+                "id": "7",
+                "nombre":"Pizza Jamón y Queso",
+                "precio": 25000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Jamón, Queso y Maicitos"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/pizza-mesa-restaurante_7939-2599.jpg?t=st=1730813859~exp=1730817459~hmac=5ada2a99cd14249ec715a74b0b0092cab009cd1edebba596fa9e6b4a986ee0c4&w=826"
+
+            },
+            {
+                "id": "8",
+                "nombre":"Pizza de pepperoni",
+                "precio": 27000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Pepperoni con salchichas, salsa de tomate, queso y chispas de hierbas"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/vista-superior-pizza-pepperoni-salchichas-salsa-tomate-queso-chispas-hierbas_140725-652.jpg?t=st=1730813809~exp=1730817409~hmac=b7eb17012db0046e23a9550075c4a671a85995cc34c390066e70e165ffd3a109&w=740"
+
+            },
+            {
+                "id": "9",
+                "nombre":"Pizza cuatro quesos ",
+                "precio": 28500,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Queso mozzarella, Queso gorgonzola, Queso parmesano y Queso fontina."],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/pizza-cuatro-quesos-sobre-mesa_140725-5392.jpg?t=st=1730813916~exp=1730817516~hmac=3fda115334c33e48f56082bed9acae9ebb62cdfbea382a413716c01856002a06&w=740"
+
+            },
+            {
+                "id": "10",
+                "nombre":"Pizza con champiñones ",
+                "precio": 25000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Champiñones, Queso y salsa de tomate"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/pizza-carne-champinones_140725-5402.jpg?t=st=1730813990~exp=1730817590~hmac=b4f8e33a521029c51589b3550bd03e259708719dfac9f17441440f80116a541b&w=740"
+
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre":"Hamburguesas",
+        "fotoUrl": "https://img.freepik.com/foto-gratis/vista-frontal-hamburguesas-stand_141793-15545.jpg?t=st=1730318257~exp=1730321857~hmac=7dee538898446bdd75c54ab59a4d49bfdb0ab8c758b1156726142003698266e0&w=740",
+        "productos":[
+            {
+                "id": "1",
+                "nombre":"Hamburguesa con queso",
+                "precio": 8000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Carne de ternera, Pan Brioche, Queso"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/bodegon-deliciosa-hamburguesa-americana_23-2149637306.jpg?t=st=1730209752~exp=1730213352~hmac=1aa0d26fd8b3734e9ee4712e8866e762dc0336c274fe82cac74a05ac197bb330&w=740"
+            },
+            {
+                "id": "2",
+                "nombre":"Hamburguesa especial",
+                "precio": 10000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Carne de ternera, Pan Brioche, Queso, Tomate, Lechuga"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/disparo-vertical-sabrosa-hamburguesa-placa-madera-restaurante_181624-50415.jpg?t=st=1730210012~exp=1730213612~hmac=8bb6bfa719ce7213a89631981e2e55605237368eb15bbbb521f929d927200bb8&w=360"
+
+            },
+            {
+                "id": "3",
+                "nombre":"Hamburguesa vegana",
+                "precio": 7000,
+                "esVegano":true,
+                "esCeliaco":false,
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/sandwich-grande-hamburguesa-jugosa-hamburguesa-pollo-queso-tomate-cebolla-roja-mesa-madera_2829-19652.jpg?t=st=1730210091~exp=1730213691~hmac=284616bbf666554b1c81944632cff68ad2aed580fc64183dda78162878aee9e8&w=740"
+
+            },
+            {
+                "id": "4",
+                "nombre":"Hamburguesa americana",
+                "precio": 8500,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/closeup-foto-hamburguesa-tocino-queso-taza-cafe-roja_181624-4345.jpg?t=st=1730324508~exp=1730328108~hmac=2377e513bab5cbd58ec65a8991543d545de790de12230a6424873e746944c0c2&w=740"
+
+            },
+            {
+                "id": "5",
+                "nombre":"Hamburguesa de pollo",
+                "precio": 9000,
+                "esVegano":false,
+                "esCeliaco":false,
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "fotoUrl": "https://img.freepik.com/foto-gratis/vista-lateral-hamburguesa-pollo-rodajas-tomate-lechuga-tablero_141793-4817.jpg?t=st=1730324473~exp=1730328073~hmac=ab52128236d75172f4e5374081694cd7c65d8334863870ba6c39381af848ed48&w=740"
+
+            }
+
+        ]
+    },
+    {
+        "id": 3,
+        "nombre":"Postres",
+        "fotoUrl": "https://img.freepik.com/foto-gratis/rebanada-brownie-chocolate-helado-nuez-vainilla_114579-778.jpg?t=st=1730210282~exp=1730213882~hmac=2e6b3c6b01eeb86a05574b66ee97d640158691cb00f931f56d68e5859ba13437&w=740",
+        "productos":[
+            {
+                "id": "14",
+                "nombre":"Postre de Milo",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 5000,
+                "fotoUrl": "https://alqueria.com.co/sites/default/files/styles/1327_612/public/postre-de-milo_0.jpg?h=2dfa7a18&itok=jn8YDvQr"
+            },
+            {
+                "id": "15",
+                "nombre":"Postre de Galleta",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 6000,
+                "fotoUrl": "https://i.ytimg.com/vi/6O4zTeqipAQ/maxresdefault.jpg"
+
+            },
+            {
+                "id": "16",
+                "nombre":"Postre de tres leches",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 8000,
+                "sabor": ["Fresa, Maracuyá, Guanabana, Mango, Lulo, Limonada"],
+                "fotoUrl": "https://cdn0.recetasgratis.net/es/posts/0/1/9/torta_tres_leches_8910_orig.jpg"
+
+            },
+            {
+                "id": "17",
+                "nombre":"Postre de maracuyá",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 4000,
+                "fotoUrl": "https://images.aws.nestle.recipes/original/7ca2437097d401c51d4a759f4ad56b11_maracuya.jpeg"
+
+            },
+            {
+                "id": "18",
+                "nombre":"Postre de Café",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 4000,
+                "fotoUrl": "https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/529cf6710af7d6939e8156dd33f98546.jpg?itok=6yjE8Qhf"
+
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre":"Bebidas",
+        "fotoUrl": "https://img.freepik.com/foto-gratis/mezcla-bebidas-alcoholicas-alto-angulo_23-2148673763.jpg?t=st=1730318570~exp=1730322170~hmac=a79aa01e0bda113068cef3ccf37ed39ef39e7a751c3700e8e11fdc392958e195&w=740",
+        "productos":[
+            {
+                "id": "19",
+                "nombre":"Pepsi Personal",
+                "esBebida": true,
+                "precio": 5000,
+                "fotoUrl": "https://www.portafolio.co/files/article_new_multimedia/uploads/2024/08/28/66cf91b01a487.jpeg"
+            },
+            {
+                "id": "20",
+                "nombre":"Coca Cola Personal",
+                "esBebida": true,
+                "precio": 6000,
+                "fotoUrl": "https://www.liderlogo.es/wp-content/uploads/2023/01/coca-cola-1-1-768x445.jpg"
+
+            },
+            {
+                "id": "21",
+                "nombre":"Jugos Naturales",
+                "esBebida": true,
+                "precio": 8000,
+                "sabor": ["Fresa, Maracuyá, Guanabana, Mango, Lulo, Limonada"],
+                "fotoUrl": "https://k-listo.com/wp-content/uploads/2020/04/JUGOS_NATURALES.jpg.webp"
+
+            },
+            {
+                "id": "22",
+                "nombre":"Sprite Personal",
+                "esBebida": true,
+                "precio": 4000,
+                "fotoUrl": "https://lacriaturacreativa.com/wp-content/uploads/2022/05/sprite-nueva-imagen06.jpg"
+
+            },
+            {
+                "id": "23",
+                "nombre":"Quatro Personal",
+                "esBebida": true,
+                "precio": 4000,
+                "fotoUrl": "https://licoresmedellin.com/cdn/shop/files/GASEOSA_QUATRO_PERSONAL_400ML.jpg?v=1719436510&width=1024"
+
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre":"Salchipapas",
+        "fotoUrl": "https://historico.qhubomedellin.com/wp-content/uploads/2021/08/Salchipapa.jpg",
+        "productos":[
+            {
+                "id": "24",
+                "nombre":"Salchipapa Pequeña",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 5000,
+                "fotoUrl": "https://www.shutterstock.com/shutterstock/photos/2092886146/display_1500/stock-photo-la-salchipapa-o-salchipapas-es-una-comida-r-pida-que-consiste-en-rodajas-fritas-de-salchicha-y-2092886146.jpg"
+            },
+            {
+                "id": "25",
+                "nombre":"Salchipapa Familiar",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 6000,
+                "fotoUrl": "https://pizzahotexpres.com/wp-content/uploads/2022/06/salvavajada-familiar.jpg"
+
+            },
+            {
+                "id": "26",
+                "nombre":"Bombóm de pollo",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 8000,
+                "sabor": ["Fresa, Maracuyá, Guanabana, Mango, Lulo, Limonada"],
+                "fotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCmxlh5QfQn2B5nTMm41hAT7etVPHcGlhYQ&s"
+
+            },
+            {
+                "id": "27",
+                "nombre":"Choripollo",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 4000,
+                "fotoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ0u06EnQFNnQKEwMT_QPtUsY3DwMXIZbVPQ&s"
+
+            },
+            {
+                "id": "28",
+                "nombre":"Salchipapa Costeña",
+                "ingredientes": ["Medallón a base de lentejas, Pan Brioche, Tomate"],
+                "precio": 4000,
+                "fotoUrl": "https://quehacerbogota.com/wp-content/uploads/2022/01/lsknrflsnfls.png"
+
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre":"Combos",
+        "fotoUrl": "https://img.freepik.com/vector-gratis/ofertas-combo-concepto-banners_23-2148669710.jpg?t=st=1730210473~exp=1730214073~hmac=cb77d06c038dd0254ea9c71e8f4d02fc55ffdde8d2089c7c96124aff14d08fb6&w=740",
+        "productos":[
+            {
+                "id": "29",
+                "nombre":"Combo 1",
+                "combo": ["Hamburguesa mediana, papas a la francesa y una gaseosa personal"],
+                "precio": 5000,
+                "fotoUrl": "https://file.adomicil.io/carlsjr-victoria.adomicil.io/_files/images/product/lanzamientos08classiccarlcombo-0332105789488231.jpg"
+            },
+            {
+                "id": "30",
+                "nombre":"Combo 2",
+                "combo": ["Medio pollo con papas a la francesa y una gaseosa personal"],
+                "precio": 6000,
+                "fotoUrl": "https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1704393910884-medio%20enero.jpg"
+
+            },
+            {
+                "id": "31",
+                "nombre":"Combo 3",
+                "combo": ["Pollo a la broaster con papas a la francesa y una gaseosa personal"],
+                "precio": 8000,
+                "fotoUrl": "https://kfcmenu.net/menu/10-pc-saucy-nuggets-combo.png"
+
+            },
+            {
+                "id": "32",
+                "nombre":"Combo 4",
+                "combo": ["2 Sandwichs con papas a la francesa y 2 gaseosas personales"],
+                "precio": 4000,
+                "fotoUrl": "https://b2cqbano.vtexassets.com/arquivos/ids/155708/COMBO-MIX-OPC-2-JULIO.jpg?v=638255573962100000"
+
+            },
+            {
+                "id": "33",
+                "nombre":"Combo 5",
+                "combo": ["Pizza pequeña con una gaseosa mediana"],
+                "precio": 4000,
+                "fotoUrl": "https://papajohns.vtexassets.com/arquivos/ids/157198/VTEX-COMBO--1.jpg?v=638278231206030000"
+
+            }
+        ]
+    }
+]

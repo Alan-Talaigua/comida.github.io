@@ -1,0 +1,74 @@
+@import './../styles.scss';
+$primary-color: #007bff;
+$background-color: #fff;
+$text-color: #333;
+
+// modo oscuro
+$dark-primary-color: #fff;
+$dark-background-color: #222;
+$dark-text-color: #fff;
+
+// mixin para aplicar los colores del tema
+@mixin theme-colors {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.container{
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px
+}
+body {
+  @include theme-colors;
+}
+
+.dark-theme {
+  --primary-color: $dark-primary-color;
+  --background-color: $dark-background-color;
+  --text-color: $dark-text-color;
+  
+}
+
+app-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  @include theme-colors;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+@media (max-width: 600px) {
+  app-tabs {
+    width: 100%;
+    color: #fff;
+  }
+  .theme-toggle-button{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+  app-tabs {
+    width: 100%;
+    color: #fff;
+  }
+  .theme-toggle-button{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 799px){
+  .container{
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+	  display: none;
+	}
+}

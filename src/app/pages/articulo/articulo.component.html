@@ -1,0 +1,49 @@
+<img id="fotoProducto" src="{{producto?.fotoUrl}}" alt="{{producto?.nombre}}">
+<div class="margen-chico">
+
+    <ng-container *ngIf="producto?.combo; else ingredientesTemplate">
+        <ul>
+            <span>Incluye: </span>
+            <li *ngFor="let item of producto?.combo">{{ item }}</li>
+        </ul>
+    </ng-container>
+
+
+    <ng-template #ingredientesTemplate>
+        <ul *ngIf="!producto?.esBebida">
+            <span>Ingredientes: </span>
+            <li *ngFor="let ingrediente of producto?.ingredientes">{{ ingrediente }}</li>
+        </ul>
+    </ng-template>
+
+    <span>Precio: </span>
+    <li class="precio">{{ producto?.precio }}</li>
+
+
+    <div *ngIf="producto?.esBebida && producto?.nombre === 'Jugos Naturales'">
+        <span>Sabores: </span>
+        <ul>
+            <li *ngFor="let sabor of producto?.sabor">{{ sabor }}</li>
+        </ul>
+    </div>
+
+
+    <div>
+        <div class="apto-container" *ngIf="producto?.esCeliaco">
+            <img class="apto" src="./../../../assets/icons/celiaco.png" alt="Apto Celiaco">
+            <p>Apto Celiaco</p>
+        </div>
+        <div class="apto-container" *ngIf="producto?.esVegano">
+            <img class="apto" src="./../../../assets/icons/vegano.png" alt="Apto Vegano">
+            <p>Apto Vegano</p>
+        </div>
+    </div>
+    <label for="notas">Notas:</label>
+    <textarea class="text-tarea" name="notas" id="notas" cols="30" rows="10" [(ngModel)]="notas"></textarea>
+    <div id="cantidad-container">
+        <label for="cantidad">Cantidad:</label>
+        <app-contador-cantidad (cantidadCambiada)="setCantidad($event)" class="cantidad-cont"></app-contador-cantidad>
+    </div>
+    
+    <button class="boton" (click)="agregarAlCarrito()">Agregar al Carrito</button>
+</div>

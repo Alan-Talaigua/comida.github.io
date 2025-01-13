@@ -1,0 +1,4 @@
+<header [ngClass]="{setExtendido:headerService.extendido$ | async}" class="fondo-imagen">
+    <h1 class="{{claseAplicada$ | async}}"  (animationend)="mostrarTituloNuevo($event)">
+        {{ tituloMostrado | async }}</h1>
+</header>

@@ -1,0 +1,247 @@
+/* You can add global styles to this file, and also import other style files */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    width: 100vw;
+    overflow-x: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+app-root{
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+}
+  .sin-scroll {
+	overflow: hidden; /* Para ocultar el scroll */
+  }
+  
+  ::-webkit-scrollbar {
+	display: none; /* Oculta el scroll en navegadores basados en WebKit */
+  }
+
+/* Definición de variables de tema */
+:root {
+	--primary-color: #007bff;
+    --background-color: #fff;
+    --text-color: #333;
+ }
+ 
+ /* Tema oscuro */
+ .dark-theme {
+	--bg-color: #121212;
+	--text-color: #e0e0e0;
+
+	.direccion{
+		color: white;
+	 }
+
+	 #oscuro{
+		color: black;
+	 }
+
+	 #oscuro-notas{
+		color: black;
+		font-weight: bold;
+	 }
+
+	 #detalles{
+		color: black;
+	 }
+
+	 .margen-chico{
+		color: white;
+		font-weight: bold;
+	 }
+	 h3{
+		color: black;
+	 }
+	 #precio{
+		font-weight: bold;
+		color: black;
+	 }
+	 .text-tarea{
+		background-color: #ffffffc6;
+	 }
+	 .cantidad-cont{
+		color: black;
+	 }
+	 .boton{
+		background-color: #ffffffc6;
+	 }
+	 .act{
+		background-color: #ffffffc6;
+	 }
+	 #color-sub{
+		font-weight: 500;
+		color: #121212;
+	 }
+ }
+ 
+ 
+ body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+ }
+ 
+
+h2, p {
+	color: var(--text-color);
+ }
+ 
+
+h3{
+	font-weight: bold;
+ }
+
+ .theme-toggle-button {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 65px;  /* Ancho inicial del botón */
+	height: 65px; /* Altura del botón */
+	border-radius: 50%; /* Mantiene la forma circular */
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	color: var(--text-color); 
+	background-color: rgba(255, 255, 255, 0.7); 
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, width 0.3s ease; /* Añadir transición de ancho */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+  
+	// Expandir el botón al hacer hover
+	&:hover {
+	  width: 150px; /* Ajustar el ancho al expandirse */
+	  border-radius: 30px; /* Cambiar la forma a un óvalo */
+	}
+  }
+  
+  .theme-toggle-button:hover {
+	width: 150px;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.9); 
+	color: var(--primary-color); 
+  }
+  
+  // Añadir el efecto de desplazamiento del icono
+  .theme-icon {
+	padding-top: 20px;
+	font-size: 14px; 
+	width: 24px; 
+	height: 24px;
+	transition: transform 0.3s ease; 
+  }
+  
+  // Añadir el efecto de desplazamiento del texto
+  .theme-text {
+	font-size: 12px;
+	opacity: 0; 
+	transition: opacity 0.3s ease, transform 0.3s ease; 
+	transform: translateY(10px); 
+  }
+  
+  // Mostrar texto y mover icono al hacer hover
+  .theme-toggle-button:hover .theme-text {
+	opacity: 1; 
+	transform: translateY(0); 
+  }
+  
+  // Mover el icono hacia la izquierda al hacer hover
+  .theme-toggle-button:hover .theme-icon {
+	transform: translateY(-10px); 
+  }
+  
+  // Cambiar dirección a fila al hacer hover
+  .theme-toggle-button:hover {
+	flex-direction: row; // Cambia a fila para que el texto esté al lado del icono
+  }
+  
+  // Definir estilos específicos para cada tema
+  .light-theme .theme-toggle-button {
+	color: black;
+  }
+  
+  .dark-theme .theme-toggle-button {
+	background-color: rgba(34, 34, 34, 0.7);
+	color: white; 
+  }
+  .margen-chico{
+	margin: 10px;
+  }
+  .apto{
+	background-color: #fff;
+	border-radius: 15px;
+  }
+
+  .negrita{
+	font-weight: bold;
+  }
+  .flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-apart{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Aplica la clase sin-scroll solo cuando el ancho de la pantalla sea de 600px o menos */
+@media (max-width: 799px) {
+	.sin-scroll {
+	  overflow-y: hidden; /* Solo oculta el scroll vertical */
+	}
+  
+	/* Oculta también el scroll en navegadores WebKit */
+	::-webkit-scrollbar {
+	  display: none;
+	}
+  }
+  

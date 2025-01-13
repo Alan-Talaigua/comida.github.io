@@ -1,0 +1,29 @@
+<div id="container">
+    <div id="foto" [ngStyle]="{'background-image': 'url('+productos.fotoUrl+')'}">
+        <img *ngIf="productos.esCeliaco" src="./../../../../assets/icons/celiaco.png" alt="Apto celiaco">
+        <img *ngIf="productos.esVegano" src="./../../../../assets/icons/vegano.png" alt="Apto vegano">
+    </div>
+    <div id="detalles">
+        <h4>{{productos.nombre}}</h4>
+
+        <ng-container *ngIf="productos.combo; else ingredientesTemplate">
+            <ul>
+                <li *ngFor="let item of productos.combo">{{ item }}</li>
+            </ul>
+        </ng-container>
+        
+        <ng-template #ingredientesTemplate>
+            <ul *ngIf="productos.ingredientes">
+                <li *ngFor="let ingrediente of productos.ingredientes">{{ ingrediente }}</li>
+            </ul>
+        </ng-template>
+
+        <ul *ngIf="productos.sabor">
+            <li *ngFor="let sabor of productos.sabor">{{ sabor }}</li>
+        </ul>
+    </div>
+
+    <div id="precio">
+        ${{productos.precio}}
+    </div>
+</div>
